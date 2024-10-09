@@ -65,8 +65,8 @@ nav ul li a:hover {
 }
 
 .social-icon {
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
     transition: transform 0.3s ease;
 }
 

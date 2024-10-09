@@ -16,15 +16,15 @@ body {
 
 /* Navegação */
 nav {
-    position: relative; /* Necessário para os ícones sociais com position absolute */
-    background-color: #000; /* Cor de fundo preta */
-    height: 60px; /* Aumenta a altura da faixa */
+    position: relative;
+    background-color: #000;
+    height: 60px; /* Altura da faixa */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Navegação - itens */
+/* Navegação - Itens */
 nav ul {
     list-style: none;
     display: flex;
@@ -33,7 +33,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 20px; /* Espaçamento entre os itens */
+    margin: 0 20px;
 }
 
 nav ul li a {
@@ -46,14 +46,14 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Ícones de redes sociais à direita */
+/* Ícones de redes sociais */
 .social-icons {
     position: absolute;
-    right: 20px; /* Distância da borda direita */
+    right: 20px;
     top: 50%;
-    transform: translateY(-50%); /* Centraliza verticalmente */
+    transform: translateY(-50%);
     display: flex;
-    gap: 15px; /* Espaçamento entre os ícones */
+    gap: 15px;
 }
 
 .social-icons img {
@@ -64,13 +64,13 @@ nav ul li a:hover {
 }
 
 .social-icons img:hover {
-    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+    transform: scale(1.1);
 }
 
 /* Estilo do vídeo */
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* Proporção 16:9 */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -119,7 +119,7 @@ nav ul li a:hover {
     margin-top: 20px;
 }
 
-/* Seções */
+/* Estilo das seções */
 .spvat-container, .faq-container, .contato-container {
     max-width: 1000px;
     margin: 40px auto;

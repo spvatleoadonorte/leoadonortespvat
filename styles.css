@@ -70,11 +70,11 @@ nav ul li a:hover {
 /* Estilo do vídeo */
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* Proporção 16:9 */
+    padding-bottom: 50%; /* Ajusta a altura do vídeo para ser menor */
     height: 0;
     overflow: hidden;
     max-width: 800px; /* Limita a largura máxima do vídeo */
-    margin: 20px auto; /* Centraliza o vídeo */
+    margin: 40px auto; /* Centraliza o vídeo e adiciona espaçamento superior/inferior */
     border: 1px solid #ccc; /* Adiciona uma borda leve */
 }
 

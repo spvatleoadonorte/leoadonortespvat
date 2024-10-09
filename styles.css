@@ -185,21 +185,52 @@ nav ul li a:hover {
     color: #333;
 }
 
-/* Estilo dos depoimentos */
+/* Estilo da seção de depoimentos */
 .depoimentos-container {
-    margin: 40px auto;
     max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.depoimentos-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .depoimento {
-    margin-bottom: 20px;
+    flex: 1 1 30%;
+    max-width: 30%;
+    margin: 15px;
+}
+
+.depoimento-box {
+    background-color: #fdf40f; /* Fundo amarelo */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 .foto-icone {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
+    margin-bottom: 15px;
 }
+
+/* Texto dentro da caixa */
+.depoimento p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.depoimento strong {
+    font-size: 16px;
+    color: #000;
+}
+
 
 /* Rodapé */
 footer {

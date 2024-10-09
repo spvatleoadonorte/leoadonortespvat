@@ -3,111 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPVAT - Seguro Obrigatório</title>
+    <title>Seguro DPVAT e SPVAT 2024 - Indenização e Informações</title>
 
     <!-- Meta tags para SEO -->
-    <meta name="description" content="Página inicial do SPVAT. Saiba como o seguro obrigatório protege vítimas de acidentes de trânsito.">
-    <meta name="keywords" content="SPVAT, Seguro Obrigatório, Acidentes de Trânsito, Indenização">
-    <meta name="author" content="[Nome da Empresa]">
+    <meta name="description" content="Saiba tudo sobre o DPVAT, SPVAT e seguro obrigatório 2024 em Pernambuco. Informações sobre indenização, sinistro, valores e como solicitar.">
+    <meta name="keywords" content="DPVAT, dpvat consulta, dpvat e seguro, dpvat indenização, receber seguro dpvat, dpvat seguro obrigatorio, seguro obrigatorio dpvat, seguro obrigatorio, seguro dpvat, dpvat seguro, seguro dpvat, receber dpvat, seguro dpvat 2024, seguro obrigatório, sinistro-seguro, detran, licenciamento 2024, indenização, dpvat 2024, dpvat valor, Pernambuco">
+    <meta name="author" content="Leoa Do Norte">
+    <meta name="robots" content="index, follow">
+
+    <!-- SEO local com foco em Pernambuco -->
+    <meta name="geo.region" content="BR-PE">
+    <meta name="geo.placename" content="Pernambuco, Brasil">
+    <meta name="geo.position" content="-8.047562;-34.877">
+    <meta name="ICBM" content="-8.047562, -34.877">
+    <!-- Verificação do Google Search Console -->
+    <meta name="google-site-verification" content="XL59r__AxCH7pLbBTb8MuNcXthogZHFkOeWXuEOb2EA" />
 
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Faixa preta com os botões de navegação -->
-    <nav class="navbar">
+    <!-- Banner no topo da página -->
+    <header class="banner-topo">
+        <img src="images/banner.webp" alt="Banner Topo">
+    </header>
+
+    <!-- Navegação com Ícones de Redes Sociais sobre a faixa amarela -->
+    <nav>
         <ul>
-            <li><a href="#sobre">Sobre o SPVAT</a></li>
-            <li><a href="#faq">Perguntas Frequentes</a></li>
+            <li><a href="#sobre-spvat">O que é o SPVAT?</a></li>
+            <li><a href="#faq">FAQ</a></li>
             <li><a href="#depoimentos">Depoimentos</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>
+
+        <!-- Ícones de Redes Sociais à direita, dentro da faixa amarela -->
+        <div class="social-icons-nav">
+            <a href="https://web.facebook.com/profile.php?viewas=100000686899395&id=61558563250795" target="_blank">
+                <img src="images/facebook.webp" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/spvat_leoadonorte/" target="_blank">
+                <img src="images/instagram.webp" alt="Instagram" class="social-icon">
+            </a>
+        </div>
     </nav>
 
-    <!-- Banner no topo da página inicial -->
-    <header class="banner-topo">
-        <img src="images/banner.png" alt="Banner SPVAT">
-    </header>
+    <!-- Título Principal (H1) -->
+    <h1>Seu Direito à Indenização com o SPVAT</h1>
 
-    <!-- Seção de Contato com Formulário -->
-    <section id="contato" class="contato-container">
-        <h2>Entre em Contato</h2>
-        <p>Nossa equipe está pronta para te ajudar com o processo de indenização do SPVAT. Preencha os dados abaixo e entraremos em contato o mais rápido possível!</p>
+    <!-- Subtítulo Explicativo (H2) -->
+    <h2>Saiba como o novo seguro obrigatório oferece cobertura e assistência rápida em casos de acidentes de trânsito.</h2>
+    
+    <div style="text-align: center;">
+    <a href="https://wa.me/81996609139" target="_blank" class="btn-whatsapp" style="display: inline-block; padding: 10px 20px; font-size: 14px; background-color: #25D366; color: white; text-decoration: none; border-radius: 5px;">
+        Entre em Contato
+    </a>
+    </div>
 
-        <!-- Formulário de Contato usando Formspree -->
-        <form id="contactForm" action="https://formspree.io/f/mlderzen" method="POST">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required><br><br>
-
-            <label for="whatsapp">WhatsApp:</label>
-            <input type="text" id="whatsapp" name="whatsapp" required><br><br>
-
-            <label for="mensagem">Mensagem:</label><br>
-            <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
-
-            <button type="submit">Enviar</button>
-        </form>
-
-        <!-- Mensagem de agradecimento -->
-        <p id="thankYouMessage" style="display: none;">Obrigado por entrar em contato! Entraremos em contato em breve.</p>
-    </section>
-
-    <!-- Depoimentos -->
-    <section id="depoimentos" class="depoimentos-container">
-        <h2>O que nossos clientes dizem</h2>
-        <div class="depoimentos-row">
-            <div class="depoimento">
-                <img src="images/cliente1.png" alt="Foto Cliente">
-                <p>"O atendimento foi excelente e o processo foi rápido e fácil!"</p>
-                <strong>Maria Silva</strong>
-            </div>
-            <!-- Adicionar mais depoimentos aqui -->
+    <!-- Fachada de Vídeo -->
+    <div class="video-container">
+        <div class="video-fachada">
+            <img src="images/thumbnail.webp" alt="Pré-visualização do vídeo" class="thumbnail">
+            <button class="play-button" onclick="carregarVideo()">Play</button>
         </div>
-    </section>
 
-    <!-- Botão flutuante do WhatsApp -->
+        <div class="video-frame" style="display: none;">
+            <iframe id="video" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Texto logo abaixo do vídeo, dividido em três linhas -->
+    <p class="texto-abaixo-video">
+        O <strong>SPVAT</strong> é o novo seguro obrigatório que substitui o <strong>DPVAT</strong><br> 
+        e oferece cobertura para vítimas de acidentes de trânsito em todo o Brasil.<br> 
+        Ele garante indenizações por morte, invalidez permanente e despesas médicas.
+    </p>
+
+    <!-- Seção SPVAT -->
+    <section id="sobre-spvat" class="spvat-container">
+        <h2>O que era o DPVAT?</h2>
+        <p>O <strong>DPVAT</strong> foi o seguro obrigatório que cobria vítimas de acidentes de trânsito. Ele foi suspenso em 2020 e será substituído pelo <strong>SPVAT</strong>, um modelo mais moderno e eficiente.</p>
+
+        <h2>O que é o SPVAT?</h2>
+        <p>O <strong>SPVAT</strong> é o novo seguro obrigatório que garante proteção às vítimas de acidentes de trânsito, com uma gestão mais transparente e processos simplificados.</p>
+
+        <h3>Principais mudanças entre o DPVAT e o SPVAT:</h3>
+        <ul>
+            <li><strong>Gestão mais eficiente</strong>: A administração dos recursos será mais controlada, evitando problemas anteriores.</li>
+            <li><strong>Processo mais simplificado</strong>: Indenizações poderão ser solicitadas digitalmente.</li>
+            <li><strong>Cobertura</strong>: Morte, invalidez permanente e despesas médicas continuam cobertas.</li>
+            <li><strong>Quem tem direito</strong>: Motoristas, passageiros, pedestres e crianças.</li>
+            <li><strong>Prazos e valores</strong>: Ainda em definição, mas serão simplificados e mais rápidos.</li>
+        </ul>
+    </section>
+ <!-- Botão flutuante do WhatsApp -->
     <div class="whatsapp-float">
         <a href="https://wa.me/81996609139">
-            <img src="images/chama-no-zap.jpeg" alt="Chame no WhatsApp">
+            <img src="images/chama-no-zap.webp" alt="Chame no WhatsApp">
         </a>
     </div>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2024 SPVAT - Todos os direitos reservados. | 
-            <a href="politica-termos.html">Política de Privacidade</a>
-        </p>
-    </footer>
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="depoimentos-container">
+        <h2>O que os nossos clientes estão falando</h2>
+        <div class="depoimentos-row">
+            <div class="depoimento">
+                <img src="images/natanael.webp" alt="Foto Cliente 1" class="foto-icone">
+                <p>"Consegui a indenização que nem sabia que tinha direito. Muito obrigado pela ajuda!"</p>
+                <strong>Natanael Barreto</strong>
+            </div>
+            <div class="depoimento">
+                <img src="images/renato.webp" alt="Foto Cliente 2" class="foto-icone">
+                <p>"O atendimento foi rápido, me senti amparado em todas as fases do processo."</p>
+                <strong>Renato Gomes dos Santos</strong>
+            </div>
+            <div class="depoimento">
+                <img src="images/lucas.webp" alt="Foto Cliente 3" class="foto-icone">
+                <p>"Eu achava que seria impossível receber a indenização, mas a equipe facilitou tudo. Trabalho impecável."</p>
+                <strong>Lucas Matias Chalaca</strong>
+            </div>
+        </div>
 
-    <!-- JavaScript para envio do formulário via AJAX -->
-    <script>
-        document.getElementById("contactForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Evita o redirecionamento padrão
+        <div class="depoimentos-row">
+            <div class="depoimento">
+                <img src="images/jose.webp" alt="Foto Cliente 4" class="foto-icone">
+                <p>"Eu estava completamente perdido até encontrar este escritório. Eles me guiaram com paciência e eficiência e conseguiram resolver meu caso com rapidez. Muito Obrigado!"</p>
+                <strong>José Silva de Araujo</strong>
+            </div>
+            <div class="depoimento">
+                <img src="images/josericardo.webp" alt="Foto Cliente 5" class="foto-icone">
+                <p>"A equipe foi incrível! Conduziram todo o processo com transparência e me mantiveram informado em cada etapa. O resultado foi muito mais rápido do que eu esperava. Recomendo fortemente!"</p>
+                <strong>José Ricardo Melo Silva</strong>
+            </div>
+            <div class="depoimento">
+                <img src="images/josenildo.webp" alt="Foto Cliente 6" class="foto-icone">
+                <p>"A ajuda de vocês foi essencial para conseguir o que eu precisava. Muito obrigado!"</p>
+                <strong>Josenildo Paixão</strong>
+            </div>
+        </div>
+    </section>
+<!--
+    <!-- Formulário de Contato usando Formspree -->
+<label for="whatsapp">WhatsApp:</label>
+<input type="text" id="whatsapp" name="whatsapp" required><br><br>
 
-            const form = event.target;
-            const formData = new FormData(form);
+<label for="mensagem">Mensagem:</label><br>
+<textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
 
-            // Envia o formulário via AJAX para o Formspree
-            fetch(form.action, {
+<button type="submit">Enviar</button>
+    <p id="thankYouMessage" style="display: none;">Obrigado por entrar em contato! Entraremos em contato em breve.</p>
+</section>
+
+<!-- Seção de Perguntas Frequentes -->
+<section id="faq" class="faq-container">
+    <h2>Perguntas Frequentes</h2>
+    <div class="faq-item">
+        <h3>1. O que é o SPVAT?</h3>
+        <p>O SPVAT é o novo seguro obrigatório que cobre vítimas de acidentes de trânsito no Brasil. Ele foi criado para substituir o DPVAT e promete ser mais eficiente, com um processo mais rápido e transparente.</p>
+    </div>
+    <div class="faq-item">
+        <h3>2. Quem tem direito ao SPVAT?</h3>
+        <p>Todos os motoristas, passageiros e pedestres envolvidos em acidentes de trânsito podem ter direito à indenização do SPVAT. Não é necessário ter carteira de motorista (CNH) para receber a indenização.</p>
+    </div>
+    <div class="faq-item">
+        <h3>3. O que o SPVAT cobre?</h3>
+        <p>O SPVAT cobre morte, invalidez permanente e despesas médicas decorrentes de acidentes de trânsito. Os valores específicos ainda estão em definição, mas a cobertura será mantida em linha com o que era oferecido pelo DPVAT.</p>
+    </div>
+    <div class="faq-item">
+        <h3>4. Como solicitar a indenização pelo SPVAT?</h3>
+        <p>Para solicitar a indenização, será necessário acessar o sistema online, preencher os formulários e enviar a documentação necessária. O processo de solicitação será simplificado e 100% digital.</p>
+    </div>
+    <div class="faq-item">
+        <h3>5. Preciso de um advogado para solicitar o SPVAT?</h3>
+        <p>Não é obrigatório ter um advogado para solicitar o SPVAT, mas contar com uma assessoria jurídica pode facilitar o processo e aumentar suas chances de sucesso.</p>
+    </div>
+    <div class="faq-item">
+        <h3>6. Qual o prazo para solicitar a indenização?</h3>
+        <p>O prazo para solicitar a indenização do SPVAT ainda está em definição pelo governo. No entanto, é esperado que seja similar ao do DPVAT, que permitia a solicitação até três anos após o acidente.</p>
+    </div>
+    <div class="faq-item">
+        <h3>7. Como posso acompanhar o andamento do meu pedido de indenização?</h3>
+        <p>Após a solicitação, você poderá acompanhar o status do seu pedido diretamente pelo site do SPVAT. Um número de protocolo será fornecido no momento do envio.</p>
+    </div>
+    <div class="faq-item">
+        <h3>8. Quais são os documentos necessários para solicitar o SPVAT?</h3>
+        <p>Os documentos normalmente incluem boletim de ocorrência, atestado médico, RG, CPF, comprovante de residência e, em caso de morte, a certidão de óbito. A lista completa será disponibilizada no site oficial do SPVAT.</p>
+    </div>
+    <div class="faq-item">
+        <h3>9. O que acontece se eu não conseguir toda a documentação necessária?</h3>
+        <p>Caso não tenha todos os documentos em mãos, nossa equipe pode orientar sobre como obtê-los ou buscar alternativas para enviar a documentação incompleta, caso permitido.</p>
+    </div>
+</section>
+
+<!-- Ícones de Redes Sociais entre a FAQ e o rodapé -->
+<div class="social-icons">
+    <a href="https://web.facebook.com/profile.php?viewas=100000686899395&id=61558563250795" target="_blank">
+        <img src="images/facebook.webp" alt="Facebook" class="social-icon">
+    </a>
+    <a href="https://www.instagram.com/spvat_leoadonorte/" target="_blank">
+        <img src="images/instagram.webp" alt="Instagram" class="social-icon">
+    </a>
+</div>
+
+<!-- Rodapé -->
+<footer>
+    <p>&copy; 2024 SPVAT - Todos os direitos reservados. | 
+        <a href="politica-termos.html">Política de Privacidade e Termos de Uso</a>
+    </p>
+</footer>
+
+<!-- JavaScript para envio do formulário via AJAX -->
+<script>
+    document.getElementById("contactForm").addEventListener("submit", async function(event) {
+        event.preventDefault(); // Evita o redirecionamento padrão
+
+        const form = event.target;
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch(form.action, {
                 method: form.method,
                 body: formData,
                 headers: {
                     'Accept': 'application/json'
                 }
-            }).then(response => {
-                if (response.ok) {
-                    // Mostra a mensagem de agradecimento e esconde o formulário
-                    form.reset(); // Reseta o formulário após o envio
-                    document.getElementById("contactForm").style.display = "none"; // Oculta o formulário
-                    document.getElementById("thankYouMessage").style.display = "block"; // Exibe a mensagem de agradecimento
-                } else {
-                    alert("Ocorreu um erro. Por favor, tente novamente.");
-                }
-            }).catch(error => {
-                alert("Ocorreu um erro. Por favor, tente novamente.");
             });
-        });
-    </script>
 
-</body>
-</html>
+            if (response.ok) {
+                // Oculta o formulário e exibe a mensagem de agradecimento
+                form.reset();
+                document.getElementById("contactForm").style.display = "none";
+                document.getElementById("thankYouMessage").style.display = "block";
+            } else {
+                alert("Ocorreu um erro. Por favor, tente novamente.");
+            }
+        } catch (error) {
+            alert("Erro ao enviar o formulário. Por favor, tente novamente.");
+        }
+    });
+
+    // Função para carregar o vídeo somente quando necessário
+    function carregarVideo() {
+        document.querySelector('.video-fachada').style.display = 'none'; // Esconde a fachada
+        document.querySelector('.video-frame').style.display = 'block';  // Mostra o iframe
+        document.getElementById('video').src = 'https://www.youtube.com/embed/GqDKQIFZ3QM?autoplay=1'; // Carrega o vídeo com autoplay
+    }
+</script>

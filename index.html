@@ -61,14 +61,13 @@
     </div>
 
     <!-- Fachada de Vídeo -->
-    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-        <div class="video-fachada" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #000;">
-            <img src="images/thumbnail.webp" alt="Pré-visualização do vídeo" class="thumbnail" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;">
+    <div class="video-container">
+        <div class="video-fachada">
+            <img src="images/thumbnail.webp" alt="Pré-visualização do vídeo" class="thumbnail" style="width: 100%; height: 100%; object-fit: cover;">
             <button class="play-button" onclick="carregarVideo()" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.6); color: white; font-size: 18px; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Play</button>
         </div>
-
-        <div class="video-frame" style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-            <iframe id="video" width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-frame" style="display: none;">
+            <iframe id="video" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 
@@ -96,8 +95,7 @@
             <li><strong>Prazos e valores</strong>: Ainda em definição, mas serão simplificados e mais rápidos.</li>
         </ul>
     </section>
-
-    <!-- Botão flutuante do WhatsApp -->
+ <!-- Botão flutuante do WhatsApp -->
     <div class="whatsapp-float">
         <a href="https://wa.me/81996609139">
             <img src="images/chama-no-zap.webp" alt="Chame no WhatsApp">
@@ -143,27 +141,26 @@
             </div>
         </div>
     </section>
-
-    <!-- Seção de Contato com Formulário -->
+<!-- Seção de Contato com Formulário -->
     <section id="contato" class="contato-container">
         <h2>Entre em Contato</h2>
         <p>Nossa equipe está pronta para te ajudar com o processo de indenização do SPVAT. Preencha os dados abaixo e entraremos em contato o mais rápido possível!</p>
 
         <!-- Formulário de Contato usando Formspree -->
-        <form action="https://formspree.io/f/mlderzen" method="POST">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required><br><br>
+<form action="https://formspree.io/f/mlderzen" method="POST">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required><br><br>
 
-            <label for="whatsapp">WhatsApp:</label>
-            <input type="text" id="whatsapp" name="whatsapp" required><br><br>
+    <label for="whatsapp">WhatsApp:</label>
+    <input type="text" id="whatsapp" name="whatsapp" required><br><br>
 
-            <label for="mensagem">Mensagem:</label><br>
-            <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+    <label for="mensagem">Mensagem:</label><br>
+    <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
 
-            <button type="submit">Enviar</button>
-        </form>
+    <button type="submit">Enviar</button>
+</form>
 
-        <!-- Mensagem de agradecimento -->
+ <!-- Mensagem de agradecimento -->
         <p id="thankYouMessage" style="display: none;">Obrigado por entrar em contato! Entraremos em contato em breve.</p>
     </section>
 
@@ -262,6 +259,10 @@
             document.getElementById('video').src = 'https://www.youtube.com/embed/GqDKQIFZ3QM?autoplay=1'; // Carrega o vídeo com autoplay
         }
     </script>
+
+</body>
+</html>
+
 
 </body>
 </html>

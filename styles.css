@@ -57,16 +57,18 @@ nav ul li a:hover {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os botões de navegação */
 }
 
 .social-icons-nav li {
     display: inline-block;
-    margin-left: 15px;
+    margin: 0 20px; /* Espaçamento entre os botões de navegação */
 }
 
 .social-icon {
-    width: 24px;
-    height: 24px;
+    width: 24px !important; /* Força o tamanho dos ícones no topo */
+    height: 24px !important;
     transition: transform 0.3s ease;
 }
 

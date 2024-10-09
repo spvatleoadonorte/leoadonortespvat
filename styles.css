@@ -204,7 +204,7 @@ nav ul li a:hover {
     max-width: 30%;
     margin: 15px;
     display: flex;
-    align-items: stretch; /* Faz as caixas ficarem do mesmo tamanho */
+    align-items: stretch; /* Garante que as caixas tenham o mesmo tamanho */
 }
 
 .depoimento-box {
@@ -212,11 +212,11 @@ nav ul li a:hover {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    position: relative; /* Para posicionar o triângulo */
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: flex-start; /* Garante que os elementos fiquem no topo */
+    align-items: center; /* Centraliza horizontalmente */
     min-height: 300px; /* Garante que todas as caixas tenham o mesmo tamanho */
 }
 
@@ -233,21 +233,18 @@ nav ul li a:hover {
 }
 
 .foto-icone {
-    width: 120px; /* Aumenta o tamanho das fotos */
+    width: 120px;
     height: 120px;
     border-radius: 50%;
     margin-bottom: 15px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-/* Texto dentro da caixa */
 .depoimento p {
     font-size: 16px;
     color: #333;
     margin-bottom: 10px;
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
 }
 
 .depoimento strong {

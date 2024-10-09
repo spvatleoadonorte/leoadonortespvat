@@ -211,7 +211,10 @@ nav ul li a:hover {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
     position: relative; /* Para posicionar o triângulo */
-    padding-bottom: 40px; /* Para dar espaço ao triângulo */
+    min-height: 280px; /* Define uma altura mínima para todas as caixas serem do mesmo tamanho */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .triangle {

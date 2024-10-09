@@ -280,7 +280,7 @@ nav ul li a:hover {
 .faq-item p {
     font-size: 16px;
     color: #555;
-    line-height: 1.8; /* Aumenta o espaçamento entre as linhas de respostas */
+    line-height: 2.0; /* Aumenta o espaçamento entre as linhas de respostas */
 }
 
 /* Estilo da seção de contato */

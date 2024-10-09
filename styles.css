@@ -203,6 +203,8 @@ nav ul li a:hover {
     flex: 1 1 30%;
     max-width: 30%;
     margin: 15px;
+    display: flex;
+    align-items: stretch; /* Faz as caixas ficarem do mesmo tamanho */
 }
 
 .depoimento-box {
@@ -211,10 +213,11 @@ nav ul li a:hover {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
     position: relative; /* Para posicionar o triângulo */
-    min-height: 280px; /* Define uma altura mínima para todas as caixas serem do mesmo tamanho */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    min-height: 300px; /* Garante que todas as caixas tenham o mesmo tamanho */
 }
 
 .triangle {
@@ -230,10 +233,13 @@ nav ul li a:hover {
 }
 
 .foto-icone {
-    width: 100px; /* Aumenta o tamanho das fotos */
-    height: 100px;
+    width: 120px; /* Aumenta o tamanho das fotos */
+    height: 120px;
     border-radius: 50%;
     margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Texto dentro da caixa */
@@ -241,6 +247,7 @@ nav ul li a:hover {
     font-size: 16px;
     color: #333;
     margin-bottom: 10px;
+    text-align: center; /* Centraliza o texto */
 }
 
 .depoimento strong {

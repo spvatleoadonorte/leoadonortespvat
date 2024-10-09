@@ -251,6 +251,49 @@ nav ul li a:hover {
     font-size: 16px;
     color: #000;
 }
+/* Estilo da seção de contato */
+.contato-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contato-container h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contato-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-container input,
+.contato-container textarea {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contato-container button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contato-container button:hover {
+    background-color: #1db854;
+}
 
 /* Rodapé */
 footer {

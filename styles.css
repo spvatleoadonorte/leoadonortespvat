@@ -72,15 +72,16 @@ nav ul li a:hover {
     font-size: 18px;
     line-height: 1.8; /* Aumenta o espaçamento entre as linhas */
     color: #333; /* Cor do texto */
-    text-align: center; /* Centraliza o texto */
+    text-align: left; /* Alinha o texto à esquerda para melhorar a leitura */
     margin: 15px 0; /* Adiciona espaçamento entre as seções */
+    font-family: 'Arial', sans-serif; /* Ajuste da fonte */
 }
 
+/* Destaque em negrito */
 .texto-abaixo-video strong {
-    color: #000; /* Destaque em negrito */
+    color: #000; /* Cor mais escura para negrito */
     font-weight: bold;
 }
-
 
 .video-fachada {
     position: relative;

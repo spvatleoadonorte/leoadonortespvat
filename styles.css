@@ -70,8 +70,8 @@ nav ul li a:hover {
 .video-container {
     position: relative;
     width: 90%; /* Aumenta a largura para 90% da página */
-    max-width: 900px; /* Aumenta a largura máxima para 900px */
-    padding-bottom: 56.25%; /* Mantém a proporção 16:9 */
+    max-width: 800px; /* Aumenta a largura máxima para 800px */
+    padding-bottom: 45%; /* Reduz a altura proporcionalmente */
     margin: 20px auto; /* Centraliza o vídeo */
     height: 0; /* Mantém o cálculo da proporção */
 }

@@ -23,12 +23,13 @@
 </head>
 <body>
 
-    <!-- Banner no topo da página -->
+     <!-- Banner no topo da página -->
     <header class="banner-topo">
         <img src="images/banner.webp" alt="Banner Topo">
     </header>
 
-    <!-- Navegação com Ícones de Redes Sociais sobre a faixa amarela -->
+
+     <!-- Navegação com Ícones de Redes Sociais sobre a faixa amarela -->
     <nav>
         <ul>
             <li><a href="#sobre-spvat">O que é o SPVAT?</a></li>
@@ -58,17 +59,11 @@
     <a href="https://wa.me/81996609139" target="_blank" class="btn-whatsapp" style="display: inline-block; padding: 10px 20px; font-size: 14px; background-color: #25D366; color: white; text-decoration: none; border-radius: 5px;">
         Entre em Contato
     </a>
-    </div>
+</div>
 
-    <!-- Fachada de Vídeo -->
+    <!-- Vídeo Explicativo -->
     <div class="video-container">
-        <div class="video-fachada">
-            <img src="images/thumbnail.webp" alt="Pré-visualização do vídeo" class="thumbnail" style="width: 100%; height: 100%; object-fit: cover;">
-            <button class="play-button" onclick="carregarVideo()" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.6); color: white; font-size: 18px; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Play</button>
-        </div>
-        <div class="video-frame" style="display: none;">
-            <iframe id="video" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GqDKQIFZ3QM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
     <!-- Texto logo abaixo do vídeo, dividido em três linhas -->
@@ -222,7 +217,7 @@
         </p>
     </footer>
 
-    <!-- JavaScript para envio do formulário via AJAX -->
+<!-- JavaScript para envio do formulário via AJAX -->
     <script>
         document.getElementById("contactForm").addEventListener("submit", async function(event) {
             event.preventDefault(); // Evita o redirecionamento padrão
@@ -251,13 +246,6 @@
                 alert("Erro ao enviar o formulário. Por favor, tente novamente.");
             }
         });
-
-        // Função para carregar o vídeo somente quando necessário
-        function carregarVideo() {
-            document.querySelector('.video-fachada').style.display = 'none'; // Esconde a fachada
-            document.querySelector('.video-frame').style.display = 'block';  // Mostra o iframe
-            document.getElementById('video').src = 'https://www.youtube.com/embed/GqDKQIFZ3QM?autoplay=1'; // Carrega o vídeo com autoplay
-        }
     </script>
 
 </body>

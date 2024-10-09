@@ -1,3 +1,4 @@
+
 /* Estilo para o layout geral */
 body {
     font-family: 'Lato', sans-serif;
@@ -15,11 +16,6 @@ body {
     object-fit: cover; /* Ajusta a imagem do banner para cobrir bem o espaço */
 }
 
-.faixa-amarela .logo img {
-    width: 100px; /* Ajuste do tamanho da logo */
-    height: auto;
-}
-
 /* Navegação */
 nav {
     display: flex;
@@ -29,7 +25,6 @@ nav {
     padding: 0px 10px; /* Diminui o espaçamento interno, reduzindo a altura */
     height: 40px; /* Define uma altura mínima para a faixa */
 }
-
 
 /* Estilos para os ícones de redes sociais na faixa amarela, à direita */
 .social-icons-nav {
@@ -43,63 +38,12 @@ nav {
     transition: transform 0.3s;
 }
 
-.social-icon:hover {
-    transform: scale(1.1); /* Efeito ao passar o mouse */
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: flex-start; /* Mantém o menu à esquerda */
-    gap: 15px;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 15px;
-}
-
-nav ul li a:hover {
-    background-color: #fff;
-    border-radius: 5px;
-    color: #000;
-}
-
 /* Título e Subtítulo */
 .intro h1 {
     color: #333;
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 20px;
-}
-
-.intro h2 {
-    color: #666;
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 30px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Botão de "Entre em Contato" Reduzido e Centralizado */
-.btn-whatsapp {
-    background-color: #25D366;
-    color: white;
-    padding: 15px 30px; /* Definindo espaçamento interno */
-    font-size: 16px; /* Ajuste do tamanho da fonte */
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block; /* Garante que o botão não ocupe toda a largura */
-    max-width: 300px; /* Largura máxima que o botão pode atingir */
-    width: 200%; /* Garante que o botão se ajuste até a largura máxima */
-    margin: 20px auto; /* Centraliza o botão */
-    text-align: center; /* Centraliza o texto dentro do botão */
-    box-sizing: border-box; /* Inclui padding e border dentro da largura */
 }
 
 /* Vídeo do YouTube */
@@ -109,13 +53,6 @@ nav ul li a:hover {
     align-items: center;
     margin: 20px auto;
     max-width: 100%;
-}
-
-.video-container iframe {
-    width: 100%;
-    max-width: 900px;
-    height: calc(515px * 0.85); 
-    border-radius: 10px;
 }
 
 /* Texto abaixo do vídeo com espaçamento e tamanho de fonte ajustados */
@@ -136,36 +73,6 @@ nav ul li a:hover {
     margin-right: auto; 
 }
 
-.spvat-container h2 {
-    color: #333; 
-    font-size: 28px; 
-    font-weight: bold;
-    margin-bottom: 20px; 
-    text-align: center; 
-}
-
-.spvat-container p {
-    color: #555; 
-    font-size: 18px; 
-    line-height: 1.6; 
-    margin-bottom: 20px; 
-    text-align: justify; 
-}
-
-.spvat-container ul {
-    list-style-type: disc; 
-    padding-left: 40px; 
-    color: #333; 
-    margin-bottom: 20px;
-    text-align: left; 
-}
-
-.spvat-container ul li {
-    margin-bottom: 10px; 
-    font-size: 18px; 
-    text-align: left; 
-}
-
 /* Seção de Depoimentos */
 .depoimentos-container {
     display: flex;
@@ -175,221 +82,11 @@ nav ul li a:hover {
     max-width: 1200px;
 }
 
-.depoimentos-row {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.depoimento {
-    position: relative;
-    background-color: #fdf40f; 
-    border-radius: 20px;
-    padding: 20px;
-    max-width: 300px;
-    width: 100%; /* Garante que todas as caixas tenham o mesmo tamanho */
-    margin: 0 20px; /* Adiciona margem entre os depoimentos */
-    text-align: center; /* Centraliza o texto */
-    font-style: italic;
-    color: #333;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo dentro dos balões */
-    line-height: 1.6; /* Adiciona espaçamento entre as linhas */
-}
-
-.depoimento p {
-    text-align: center; /* Centraliza o texto */
-    margin: 0 auto; /* Remove espaços desnecessários */
-}
-
-.depoimento:before {
-    content: '';
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid #fdf40f; 
-}
-
 .foto-icone {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin-bottom: 15px;
-}
-
-/* Seção 4: Captura de Leads */
-.contato-container {
-    background-color: #fdf40f;
-    padding: 40px 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: 40px auto;
-    text-align: left;
-}
-
-.contato-container h2 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.contato-container p {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 30px;
-    text-align: center;
- line-height: 1.8; /* Aumenta o espaçamento entre linhas */
-}
-
-/* Estilos para o formulário */
-form {
-    max-width: 600px; /* Define a largura máxima do formulário */
-    margin: 0 auto; /* Centraliza o formulário */
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%; /* Faz os campos ocuparem 100% da largura do formulário */
-    padding: 15px; /* Aumenta o espaço interno dos campos */
-    margin-bottom: 20px; /* Espaçamento entre os campos */
-    border: 1px solid #ccc; /* Borda dos campos */
-    border-radius: 5px; /* Bordas arredondadas */
-    font-size: 16px; /* Aumenta o tamanho da fonte */
-    box-sizing: border-box; /* Garante que o padding esteja dentro da largura */
-}
-
-textarea {
-    height: 150px; /* Aumenta a altura da área de texto */
-    resize: vertical; /* Permite que o usuário ajuste a altura */
-}
-
-button {
-    padding: 15px 20px; /* Aumenta o tamanho do botão */
-    background-color: #25D366; /* Cor de fundo do botão */
-    color: white; /* Cor do texto do botão */
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    width: 100%;
-}
-
-button:hover {
-    background-color: #128C7E; /* Cor ao passar o mouse */
-}
-
-
-
-/* Seção Perguntas Frequentes */
-.faq-container {
-    background-color: #ffffff; 
-    padding: 40px 20px; 
-    border-radius: 10px; 
-    margin-bottom: 40px; 
-    max-width: 1000px; 
-    margin-left: auto; 
-    margin-right: auto; 
-}
-
-.faq-container h2 {
-    color: #333; 
-    font-size: 28px; 
-    font-weight: bold;
-    margin-bottom: 20px; 
-    text-align: center; 
-}
-
-.faq-item {
-    border: 2px solid #fdf40f; /* Borda amarela */
-    border-radius: 10px; /* Bordas arredondadas */
-    padding: 20px; /* Espaçamento interno */
-    margin-bottom: 20px; /* Espaçamento entre as caixas */
-    background-color: #fdf40f; /* Fundo amarelo */
-    max-width: 800px; /* Limita a largura das caixas */
-    margin-left: auto; /* Centraliza a caixa horizontalmente */
-    margin-right: auto; /* Centraliza a caixa horizontalmente */
-}
-
-.faq-item h3 {
-    font-size: 20px; /* Tamanho da fonte das perguntas */
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.faq-item p {
-    font-size: 16px; /* Tamanho da fonte das respostas */
-    color: #555;
-    margin: 0;
-    line-height: 1.6; /* Aumenta o espaçamento entre linhas */
-}
-
-/* Caixa com fundo branco e bordas amarelas */
-.policy-box {
-    background-color: #fff; /* Fundo branco */
-    border: 2px solid #fdf40f; /* Borda amarela */
-    border-radius: 10px; /* Bordas arredondadas */
-    padding: 20px;
-    max-width: 900px; /* Limita a largura da caixa */
-    margin: 40px auto; /* Centraliza a caixa */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra para destaque */
-}
-
-/* Estilos para o conteúdo dentro da caixa */
-.policy-content h1, 
-.policy-content h2 {
-    color: #333;
-    text-align: center; /* Alinha o texto à esquerda */
-}
-
-.policy-content p {
-    font-size: 16px;
-    line-height: 1.6; /* Adiciona espaçamento entre as linhas */
-    color: #555;
-    margin-bottom: 20px;
-}
-/* Banner no topo da página de Política de Privacidade */
-.policy-terms-container .banner img {
-    width: 100%; /* O banner se ajusta ao tamanho do contêiner */
-    max-width: 10000px; /* Define uma largura máxima para o banner */
-    height: auto; /* Mantém a proporção da imagem */
-    margin: 0 auto; /* Centraliza o banner */
-    display: block; /* Garante a centralização */
-}
-
-.policy-terms-container p {
-    text-align: justify;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-/* Estilos para os ícones de redes sociais */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 5px; /* Reduz o espaço acima dos ícones */
-    margin-bottom: 10px; /* Mantém algum espaço antes do rodapé */
-}
-
-.social-icon {
-    width: 60px; /* Tamanho dos ícones */
-    height: 60px;
-    transition: transform 0.3s;
-}
-
-.social-icon:hover {
-    transform: scale(1.1); /* Aumenta levemente o ícone ao passar o mouse */
 }
 
 /* Botão flutuante do WhatsApp */
@@ -412,49 +109,6 @@ button:hover {
     border-radius: 50px;
 }
 
-.whatsapp-float a {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-/* Rodapé */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0; /* Mantém a faixa preta do rodapé */
-    font-size: 14px;
-    text-align: center;
-}
-
-footer a {
-    color: #ffcc00;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Responsividade */
-@media only screen and (max-width: 600px) {
-    .whatsapp-float {
-        width: 70px;
-        height: 70px;
-        bottom: 15px;
-        right: 15px;
-    }
-    
-    .whatsapp-float img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .depoimentos-row {
-        flex-direction: column;
-        align-items: center;
-    }
 
     .depoimento {
         width: 80%;

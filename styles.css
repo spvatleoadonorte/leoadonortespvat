@@ -257,7 +257,7 @@ nav ul li a:hover {
     margin: 40px auto;
     padding: 20px;
     background-color: #ffffff; /* Fundo branco */
-    border: 8px solid #fdf40f; /* Aumenta a espessura da borda amarela */
+    border: 15px solid #fdf40f; /* Aumenta a espessura da borda amarela */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }

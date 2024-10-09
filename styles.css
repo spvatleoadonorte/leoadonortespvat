@@ -1,85 +1,147 @@
-
-/* Estilo para o layout geral */
+/* Estilo geral do corpo */
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #ffffff; /* Fundo branco */
+    background-color: #ffffff;
     color: #333;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-/* Banner no topo */
+/* Estilo para o banner no topo */
 .banner-topo img {
-    width: 100%; /* Faz o banner ocupar toda a largura da página */
-    height: auto; /* Ajusta a altura automaticamente para manter a proporção */
-    object-fit: cover; /* Ajusta a imagem do banner para cobrir bem o espaço */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
-/* Navegação */
-nav {
-    display: flex;
-    justify-content: center; /* Coloca o menu à esquerda e os ícones à direita */
-    align-items: center;
-    background-color: #000000; /* Amarelo mais vivo */
-    padding: 0px 10px; /* Diminui o espaçamento interno, reduzindo a altura */
-    height: 40px; /* Define uma altura mínima para a faixa */
-}
-
-/* Estilos para os ícones de redes sociais na faixa amarela, à direita */
-.social-icons-nav {
-    display: flex;
-    gap: 10px; /* Espaçamento entre os ícones */
-}
-
-.social-icon {
-    width: 20px; /* Ajusta o tamanho dos ícones */
-    height: 20px;
-    transition: transform 0.3s;
-}
-
-/* Título e Subtítulo */
-.intro h1 {
-    color: #333;
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-/* Vídeo do YouTube */
-.video-container {
+/* Estilo da navegação */
+nav ul {
+    list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto;
-    max-width: 100%;
+    padding: 0;
+    background-color: #000;
 }
 
-/* Texto abaixo do vídeo com espaçamento e tamanho de fonte ajustados */
-.texto-abaixo-video {
-    margin-top: 20px; /* Aumenta o espaço entre o vídeo e o texto */
-    line-height: 1.6; /* Define um espaçamento confortável entre as linhas */
-    font-size: 20px; /* Aumenta o tamanho da letra */
+nav ul li {
+    margin-right: 15px;
 }
 
-/* Estilo para a Seção SPVAT e DPVAT */
-.spvat-container {
-    background-color: #fdf40f; 
-    padding: 40px 20px; 
-    border-radius: 10px; 
-    margin-bottom: 40px; 
-    max-width: 1000px; 
-    margin-left: auto; 
-    margin-right: auto; 
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-/* Seção de Depoimentos */
-.depoimentos-container {
+/* Botões de navegação: hover */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para os ícones de redes sociais na faixa amarela */
+.social-icons-nav {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px auto;
+    justify-content: flex-end;
+    gap: 10px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo do vídeo */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+.video-fachada {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.video-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo do texto abaixo do vídeo */
+.texto-abaixo-video {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Seção SPVAT */
+.spvat-container {
+    background-color: #fdf40f;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo para a seção de depoimentos */
+.depoimentos-container {
     max-width: 1200px;
+    margin: 40px auto;
+}
+
+.depoimentos-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.depoimento {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
 }
 
 .foto-icone {
@@ -89,16 +151,62 @@ nav {
     margin-bottom: 15px;
 }
 
-/* Botão flutuante do WhatsApp */
+/* Estilo para o formulário de contato */
+.contato-container {
+    background-color: #fdf40f;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.contato-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contato-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1f9f50;
+}
+
+/* Estilo do botão flutuante do WhatsApp */
 .whatsapp-float {
     position: fixed;
-    width: 80px;
-    height: 80px;
     bottom: 20px;
     right: 20px;
-    background-color: transparent;
-    border-radius: 50px;
-    box-shadow: 2px 2px 3px #999;
+    width: 80px;
+    height: 80px;
     z-index: 100;
 }
 
@@ -109,9 +217,58 @@ nav {
     border-radius: 50px;
 }
 
+/* Estilo da seção de perguntas frequentes */
+.faq-container {
+    background-color: #fdf40f;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    .depoimento {
-        width: 80%;
-        margin-bottom: 20px;
-    }
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Ícones de redes sociais entre a FAQ e o rodapé */
+.social-icons {
+    margin: 30px 0;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }

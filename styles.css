@@ -259,6 +259,7 @@ nav ul li a:hover {
     background-color: #fdf40f; /* Fundo amarelo */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: left; /* Alinha o conteúdo à esquerda */
 }
 
 .faq-container h2 {
@@ -280,7 +281,8 @@ nav ul li a:hover {
 .faq-item p {
     font-size: 16px;
     color: #555;
-    line-height: 2.0; /* Aumenta o espaçamento entre as linhas de respostas */
+    line-height: 2 !important; /* Garante o espaçamento entre as linhas das respostas */
+    text-align: left !important; /* Garante que o texto fique alinhado à esquerda */
 }
 
 /* Estilo da seção de contato */

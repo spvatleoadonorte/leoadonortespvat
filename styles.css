@@ -46,26 +46,27 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Ícones de redes sociais */
+/* Estilo dos ícones de redes sociais */
 .social-icons {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    text-align: center; /* Centraliza os ícones */
+    margin: 30px auto; /* Espaçamento ao redor dos ícones */
     display: flex;
-    gap: 15px;
+    justify-content: center;
+    align-items: center;
 }
 
-.social-icons img {
-    width: 100px;
-    height: 100px;
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px; /* Espaçamento entre os ícones */
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease;
 }
 
-.social-icons img:hover {
-    transform: scale(1.1);
+.social-icon:hover {
+    transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
 }
+
 /* Estilo do vídeo */
 .video-container {
     position: relative;
@@ -328,23 +329,6 @@ nav ul li a:hover {
 
 .contato-container button:hover {
     background-color: #1db854;
-}
-/* Estilo dos ícones de redes sociais */
-.social-icons {
-    text-align: center; /* Centraliza os ícones */
-    margin: 30px auto; /* Espaçamento ao redor dos ícones */
-}
-
-.social-icon {
-    width: 40px;
-    height: 40px;
-    margin: 0 10px; /* Espaçamento entre os ícones */
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.social-icon:hover {
-    transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
 }
 
 /* Mantendo a faixa preta como estava antes */

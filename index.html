@@ -23,13 +23,12 @@
 </head>
 <body>
 
-     <!-- Banner no topo da página -->
+    <!-- Banner no topo da página -->
     <header class="banner-topo">
         <img src="images/banner.webp" alt="Banner Topo">
     </header>
 
-
-     <!-- Navegação com Ícones de Redes Sociais sobre a faixa amarela -->
+    <!-- Navegação com Ícones de Redes Sociais sobre a faixa amarela -->
     <nav>
         <ul>
             <li><a href="#sobre-spvat">O que é o SPVAT?</a></li>
@@ -59,11 +58,18 @@
     <a href="https://wa.me/81996609139" target="_blank" class="btn-whatsapp" style="display: inline-block; padding: 10px 20px; font-size: 14px; background-color: #25D366; color: white; text-decoration: none; border-radius: 5px;">
         Entre em Contato
     </a>
-</div>
+    </div>
 
-    <!-- Vídeo Explicativo -->
+    <!-- Fachada de Vídeo -->
     <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/GqDKQIFZ3QM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="video-fachada">
+            <img src="images/thumbnail.webp" alt="Pré-visualização do vídeo" class="thumbnail">
+            <button class="play-button" onclick="carregarVideo()">Play</button>
+        </div>
+
+        <div class="video-frame" style="display: none;">
+            <iframe id="video" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </div>
 
     <!-- Texto logo abaixo do vídeo, dividido em três linhas -->
@@ -90,7 +96,8 @@
             <li><strong>Prazos e valores</strong>: Ainda em definição, mas serão simplificados e mais rápidos.</li>
         </ul>
     </section>
- <!-- Botão flutuante do WhatsApp -->
+
+    <!-- Botão flutuante do WhatsApp -->
     <div class="whatsapp-float">
         <a href="https://wa.me/81996609139">
             <img src="images/chama-no-zap.webp" alt="Chame no WhatsApp">
@@ -136,26 +143,27 @@
             </div>
         </div>
     </section>
-<!-- Seção de Contato com Formulário -->
+
+    <!-- Seção de Contato com Formulário -->
     <section id="contato" class="contato-container">
         <h2>Entre em Contato</h2>
         <p>Nossa equipe está pronta para te ajudar com o processo de indenização do SPVAT. Preencha os dados abaixo e entraremos em contato o mais rápido possível!</p>
 
         <!-- Formulário de Contato usando Formspree -->
-<form action="https://formspree.io/f/mlderzen" method="POST">
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" required><br><br>
+        <form action="https://formspree.io/f/mlderzen" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
 
-    <label for="whatsapp">WhatsApp:</label>
-    <input type="text" id="whatsapp" name="whatsapp" required><br><br>
+            <label for="whatsapp">WhatsApp:</label>
+            <input type="text" id="whatsapp" name="whatsapp" required><br><br>
 
-    <label for="mensagem">Mensagem:</label><br>
-    <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
 
-    <button type="submit">Enviar</button>
-</form>
+            <button type="submit">Enviar</button>
+        </form>
 
- <!-- Mensagem de agradecimento -->
+        <!-- Mensagem de agradecimento -->
         <p id="thankYouMessage" style="display: none;">Obrigado por entrar em contato! Entraremos em contato em breve.</p>
     </section>
 
@@ -217,7 +225,7 @@
         </p>
     </footer>
 
-<!-- JavaScript para envio do formulário via AJAX -->
+    <!-- JavaScript para envio do formulário via AJAX -->
     <script>
         document.getElementById("contactForm").addEventListener("submit", async function(event) {
             event.preventDefault(); // Evita o redirecionamento padrão
@@ -246,7 +254,15 @@
                 alert("Erro ao enviar o formulário. Por favor, tente novamente.");
             }
         });
+
+        // Função para carregar o vídeo somente quando necessário
+        function carregarVideo() {
+            document.querySelector('.video-fachada').style.display = 'none'; // Esconde a fachada
+            document.querySelector('.video-frame').style.display = 'block';  // Mostra o iframe
+            document.getElementById('video').src = 'https://www.youtube.com/embed/GqDKQIFZ3QM?autoplay=1'; // Carrega o vídeo com autoplay
+        }
     </script>
 
 </body>
 </html>
+

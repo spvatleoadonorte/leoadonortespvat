@@ -111,14 +111,57 @@ nav ul li a:hover {
     margin-top: 20px;
 }
 
-/* Estilo das seções */
-.spvat-container, .faq-container, .contato-container {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #fdf40f;
-    border-radius: 8px;
+/* Estilo da seção SPVAT */
+.spvat-container {
+    background-color: #fdf40f; /* Fundo amarelo claro */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 800px;
+    margin: 20px auto;
 }
+
+/* Estilo dos títulos */
+.spvat-container h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.spvat-container h3 {
+    font-size: 22px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* Estilo dos parágrafos */
+.spvat-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Estilo da lista */
+.spvat-container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.spvat-container ul li {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Negrito para destaques */
+.spvat-container strong {
+    color: #333;
+}
+
 
 /* Estilo dos depoimentos */
 .depoimentos-container {

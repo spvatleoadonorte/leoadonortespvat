@@ -69,7 +69,7 @@ nav ul li a:hover {
 /* Estilo do vídeo */
 .video-container {
     position: relative;
-    width: 70%; /* Largura em 70% da página */
+    width: 100%; /* Largura em 70% da página */
     max-width: 900px; /* Limita a largura máxima */
     padding-bottom: 56.25%; /* Mantém a proporção 16:9 */
     margin: 20px auto; /* Centraliza o vídeo */

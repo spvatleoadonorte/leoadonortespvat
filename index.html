@@ -97,8 +97,9 @@
             }).then(response => {
                 if (response.ok) {
                     // Mostra a mensagem de agradecimento e esconde o formulário
-                    document.getElementById("contactForm").style.display = "none";
-                    document.getElementById("thankYouMessage").style.display = "block";
+                    form.reset(); // Reseta o formulário após o envio
+                    document.getElementById("contactForm").style.display = "none"; // Oculta o formulário
+                    document.getElementById("thankYouMessage").style.display = "block"; // Exibe a mensagem de agradecimento
                 } else {
                     alert("Ocorreu um erro. Por favor, tente novamente.");
                 }

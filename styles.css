@@ -70,7 +70,7 @@ nav ul li a:hover {
 /* Estilo do texto abaixo do vídeo */
 .texto-abaixo-video {
     font-size: 18px;
-    line-height: 2.0; /* Espaçamento consistente entre as linhas */
+    line-height: 2.2; /* Espaçamento consistente entre as linhas */
     color: #333; /* Cor do texto */
     text-align: center; /* Centraliza o texto */
     margin: 15px 0; /* Espaçamento entre os blocos de texto */

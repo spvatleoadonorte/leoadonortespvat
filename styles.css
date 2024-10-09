@@ -71,22 +71,25 @@ nav ul li a:hover {
     position: relative;
     width: 80%; /* Define a largura em 80% da página */
     max-width: 700px; /* Limita a largura máxima a 700px */
-    height: auto; /* Ajusta a altura automaticamente */
+    padding-bottom: 56.25%; /* Mantém a proporção 16:9 (altura proporcional à largura) */
+    height: 0;
     margin: 20px auto; /* Centraliza o vídeo */
     overflow: hidden;
 }
 
 .video-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%; /* Garante que o vídeo ocupe a largura da área definida */
-    height: auto; /* Ajusta a altura automaticamente mantendo a proporção */
-    display: block;
+    height: 100%; /* Ajusta a altura automaticamente mantendo a proporção */
     border: none;
 }
 
 /* Estilo do texto abaixo do vídeo */
 .texto-abaixo-video {
     font-size: 18px;
-    line-height: 2.2; /* Espaçamento consistente entre as linhas */
+    line-height: 2.2; /* Aumenta o espaçamento entre as linhas */
     color: #333; /* Cor do texto */
     text-align: center; /* Centraliza o texto */
     margin: 15px 0; /* Espaçamento entre os blocos de texto */
@@ -96,6 +99,7 @@ nav ul li a:hover {
     color: #000; /* Cor mais escura para negrito */
     font-weight: bold;
 }
+
 .video-fachada {
     position: relative;
     width: 100%;

@@ -63,10 +63,9 @@
     <!-- Fachada de Vídeo -->
     <div class="video-container">
         <div class="video-fachada">
-            <img src="images/thumbnail.webp" alt="Pré-visualização do vídeo" class="thumbnail">
-            <button class="play-button" onclick="carregarVideo()">Play</button>
+            <img src="images/thumbnail.webp" alt="Pré-visualização do vídeo" class="thumbnail" style="width: 100%; height: 100%; object-fit: cover;">
+            <button class="play-button" onclick="carregarVideo()" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.6); color: white; font-size: 18px; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Play</button>
         </div>
-
         <div class="video-frame" style="display: none;">
             <iframe id="video" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -142,4 +141,124 @@
             </div>
         </div>
     </section>
-<!--
+<!-- Seção de Contato com Formulário -->
+    <section id="contato" class="contato-container">
+        <h2>Entre em Contato</h2>
+        <p>Nossa equipe está pronta para te ajudar com o processo de indenização do SPVAT. Preencha os dados abaixo e entraremos em contato o mais rápido possível!</p>
+
+        <!-- Formulário de Contato usando Formspree -->
+<form action="https://formspree.io/f/mlderzen" method="POST">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <label for="whatsapp">WhatsApp:</label>
+    <input type="text" id="whatsapp" name="whatsapp" required><br><br>
+
+    <label for="mensagem">Mensagem:</label><br>
+    <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+
+    <button type="submit">Enviar</button>
+</form>
+
+ <!-- Mensagem de agradecimento -->
+        <p id="thankYouMessage" style="display: none;">Obrigado por entrar em contato! Entraremos em contato em breve.</p>
+    </section>
+
+    <!-- Seção de Perguntas Frequentes -->
+    <section id="faq" class="faq-container">
+        <h2>Perguntas Frequentes</h2>
+        <div class="faq-item">
+            <h3>1. O que é o SPVAT?</h3>
+            <p>O SPVAT é o novo seguro obrigatório que cobre vítimas de acidentes de trânsito no Brasil. Ele foi criado para substituir o DPVAT e promete ser mais eficiente, com um processo mais rápido e transparente.</p>
+        </div>
+        <div class="faq-item">
+            <h3>2. Quem tem direito ao SPVAT?</h3>
+            <p>Todos os motoristas, passageiros e pedestres envolvidos em acidentes de trânsito podem ter direito à indenização do SPVAT. Não é necessário ter carteira de motorista (CNH) para receber a indenização.</p>
+        </div>
+        <div class="faq-item">
+            <h3>3. O que o SPVAT cobre?</h3>
+            <p>O SPVAT cobre morte, invalidez permanente e despesas médicas decorrentes de acidentes de trânsito. Os valores específicos ainda estão em definição, mas a cobertura será mantida em linha com o que era oferecido pelo DPVAT.</p>
+        </div>
+        <div class="faq-item">
+            <h3>4. Como solicitar a indenização pelo SPVAT?</h3>
+            <p>Para solicitar a indenização, será necessário acessar o sistema online, preencher os formulários e enviar a documentação necessária. O processo de solicitação será simplificado e 100% digital.</p>
+        </div>
+        <div class="faq-item">
+            <h3>5. Preciso de um advogado para solicitar o SPVAT?</h3>
+            <p>Não é obrigatório ter um advogado para solicitar o SPVAT, mas contar com uma assessoria jurídica pode facilitar o processo e aumentar suas chances de sucesso.</p>
+        </div>
+        <div class="faq-item">
+            <h3>6. Qual o prazo para solicitar a indenização?</h3>
+            <p>O prazo para solicitar a indenização do SPVAT ainda está em definição pelo governo. No entanto, é esperado que seja similar ao do DPVAT, que permitia a solicitação até três anos após o acidente.</p>
+        </div>
+        <div class="faq-item">
+            <h3>7. Como posso acompanhar o andamento do meu pedido de indenização?</h3>
+            <p>Após a solicitação, você poderá acompanhar o status do seu pedido diretamente pelo site do SPVAT. Um número de protocolo será fornecido no momento do envio.</p>
+        </div>
+        <div class="faq-item">
+            <h3>8. Quais são os documentos necessários para solicitar o SPVAT?</h3>
+            <p>Os documentos normalmente incluem boletim de ocorrência, atestado médico, RG, CPF, comprovante de residência e, em caso de morte, a certidão de óbito. A lista completa será disponibilizada no site oficial do SPVAT.</p>
+        </div>
+        <div class="faq-item">
+            <h3>9. O que acontece se eu não conseguir toda a documentação necessária?</h3>
+            <p>Caso não tenha todos os documentos em mãos, nossa equipe pode orientar sobre como obtê-los ou buscar alternativas para enviar a documentação incompleta, caso permitido.</p>
+        </div>
+    </section>
+
+    <!-- Ícones de Redes Sociais entre a FAQ e o rodapé -->
+    <div class="social-icons">
+        <a href="https://web.facebook.com/profile.php?viewas=100000686899395&id=61558563250795" target="_blank">
+            <img src="images/facebook.webp" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com/spvat_leoadonorte/" target="_blank">
+            <img src="images/instagram.webp" alt="Instagram" class="social-icon">
+        </a>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 SPVAT - Todos os direitos reservados. | 
+            <a href="politica-termos.html">Política de Privacidade e Termos de Uso</a>
+        </p>
+    </footer>
+
+    <!-- JavaScript para envio do formulário via AJAX -->
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", async function(event) {
+            event.preventDefault(); // Evita o redirecionamento padrão
+
+            const form = event.target;
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Oculta o formulário e exibe a mensagem de agradecimento
+                    form.reset();
+                    document.getElementById("contactForm").style.display = "none";
+                    document.getElementById("thankYouMessage").style.display = "block";
+                } else {
+                    alert("Ocorreu um erro. Por favor, tente novamente.");
+                }
+            } catch (error) {
+                alert("Erro ao enviar o formulário. Por favor, tente novamente.");
+            }
+        });
+
+        // Função para carregar o vídeo somente quando necessário
+        function carregarVideo() {
+            document.querySelector('.video-fachada').style.display = 'none'; // Esconde a fachada
+            document.querySelector('.video-frame').style.display = 'block';  // Mostra o iframe
+            document.getElementById('video').src = 'https://www.youtube.com/embed/GqDKQIFZ3QM?autoplay=1'; // Carrega o vídeo com autoplay
+        }
+    </script>
+
+</body>
+</html>

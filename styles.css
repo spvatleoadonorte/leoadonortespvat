@@ -69,21 +69,23 @@ nav ul li a:hover {
 /* Estilo do vídeo */
 .video-container {
     position: relative;
-    width: 90%; /* Aumenta a largura para 90% da página */
-    max-width: 800px; /* Aumenta a largura máxima para 800px */
-    padding-bottom: 45%; /* Reduz a altura proporcionalmente */
+    width: 80%; /* Largura em 80% da página */
+    max-width: 700px; /* Limita a largura máxima a 700px */
+    height: 0;
+    padding-bottom: 40%; /* Ajuste de altura para que o vídeo não fique muito alto */
     margin: 20px auto; /* Centraliza o vídeo */
-    height: 0; /* Mantém o cálculo da proporção */
+    overflow: hidden; /* Garante que o conteúdo não transborde */
 }
 
 .video-frame {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Garante que o vídeo ocupe toda a largura da área definida */
-    height: 100%; /* Ajusta a altura proporcionalmente */
+    width: 100%; /* Largura total do vídeo */
+    height: 100%; /* Altura proporcional ao container */
     border: none; /* Remove borda ao redor do vídeo */
 }
+
 
 /* Estilo do texto abaixo do vídeo */
 .texto-abaixo-video {

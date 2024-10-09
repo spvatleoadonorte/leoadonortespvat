@@ -17,10 +17,12 @@ body {
 /* Navegação */
 nav ul {
     list-style: none;
-    display: flex; /* Coloca os itens em linha */
-    justify-content: center; /* Centraliza os itens */
+    display: flex;
+    justify-content: center;
     padding: 0;
     background-color: #000; /* Faixa preta */
+    height: 60px; /* Aumenta a altura da faixa */
+    align-items: center; /* Alinha verticalmente os itens */
 }
 
 nav ul li {
@@ -35,6 +37,27 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+/* Ícones de redes sociais */
+.social-icons {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    display: flex;
+    gap: 15px; /* Espaçamento entre os ícones */
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
 }
 
 /* Estilo do vídeo */

@@ -329,6 +329,23 @@ nav ul li a:hover {
 .contato-container button:hover {
     background-color: #1db854;
 }
+/* Estilo dos ícones de redes sociais */
+.social-icons {
+    text-align: center; /* Centraliza os ícones */
+    margin: 30px auto; /* Espaçamento ao redor dos ícones */
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px; /* Espaçamento entre os ícones */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
+}
 
 /* Mantendo a faixa preta como estava antes */
 footer {

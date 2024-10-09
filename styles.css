@@ -50,7 +50,7 @@ nav ul li a:hover {
 .social-icons-nav {
     background-color: #000; /* Cor da faixa preta */
     padding: 10px 0;
-    text-align: right; /* Centraliza à direita */
+    text-align: right; /* Posiciona os ícones à direita */
 }
 
 .social-icons-nav ul {
@@ -81,8 +81,53 @@ nav ul li a:hover {
 }
 
 .social-icons-bottom .social-icon {
+    width: 40px;
+    height: 40px;
     margin: 0 10px;
 }
+
+/* Estilo da seção de perguntas frequentes */
+.faq-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fdf40f; /* Fundo amarelo */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: left; /* Alinha o conteúdo à esquerda */
+}
+
+.faq-container h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.faq-item p {
+    font-size: 16px;
+    color: #555;
+    line-height: 2;
+}
+
+/* Mantendo a faixa preta (rodapé) */
+footer {
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+}
+
 
 
 /* Estilo do vídeo */

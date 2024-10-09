@@ -67,14 +67,12 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
-/* Estilo do vídeo */
-.video-container {
-    position: relative;
-    width: 80%; /* Define a largura em 80% da página */
-    max-width: 700px; /* Define a largura máxima */
-    height: auto; /* Ajusta a altura automaticamente */
-    margin: 20px auto; /* Centraliza o vídeo */
-    overflow: hidden;
+/* Estilo do texto abaixo do vídeo */
+.texto-abaixo-video {
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 1.6; /* Ajusta o espaçamento entre as linhas */
+    text-align: center; /* Centraliza o texto */
 }
 
 .video-fachada {

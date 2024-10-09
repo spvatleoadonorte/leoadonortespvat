@@ -119,6 +119,7 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
     max-width: 800px;
     margin: 20px auto;
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
 /* Estilo dos títulos */
@@ -138,7 +139,7 @@ nav ul li a:hover {
 /* Estilo dos parágrafos */
 .spvat-container p {
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.8; /* Aumenta o espaçamento entre as linhas */
     color: #555;
     margin-bottom: 20px;
 }
@@ -152,7 +153,7 @@ nav ul li a:hover {
 
 .spvat-container ul li {
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.8; /* Aumenta o espaçamento entre as linhas na lista */
     color: #555;
     margin-bottom: 10px;
 }
@@ -161,7 +162,6 @@ nav ul li a:hover {
 .spvat-container strong {
     color: #333;
 }
-
 
 /* Estilo dos depoimentos */
 .depoimentos-container {

@@ -46,26 +46,44 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Estilo dos ícones de redes sociais */
-.social-icons {
-    text-align: center; /* Centraliza os ícones */
-    margin: 30px auto; /* Espaçamento ao redor dos ícones */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Ícones de redes sociais na faixa preta (topo) */
+.social-icons-nav {
+    background-color: #000; /* Cor da faixa preta */
+    padding: 10px 0;
+    text-align: right; /* Centraliza à direita */
+}
+
+.social-icons-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons-nav li {
+    display: inline-block;
+    margin-left: 15px;
 }
 
 .social-icon {
     width: 40px;
     height: 40px;
-    margin: 0 10px; /* Espaçamento entre os ícones */
-    cursor: pointer;
     transition: transform 0.3s ease;
 }
 
 .social-icon:hover {
     transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
 }
+
+/* Ícones de redes sociais entre FAQ e rodapé */
+.social-icons-bottom {
+    text-align: center; /* Centraliza os ícones entre o FAQ e rodapé */
+    margin: 20px 0;
+}
+
+.social-icons-bottom .social-icon {
+    margin: 0 10px;
+}
+
 
 /* Estilo do vídeo */
 .video-container {

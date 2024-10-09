@@ -72,9 +72,11 @@ nav ul li a:hover {
     position: relative;
     width: 80%; /* Define a largura em 80% da página */
     max-width: 700px; /* Define a largura máxima */
-    height: auto; /* Ajusta a altura automaticamente */
+    height: 0; /* Ajusta a altura automaticamente */
+    padding-bottom: 56.25%; /* Mantém a proporção 16:9 */
     margin: 20px auto; /* Centraliza o vídeo */
     overflow: hidden;
+    border: 1px solid #ccc; /* Adiciona uma borda leve */
 }
 
 .video-fachada {
@@ -103,8 +105,12 @@ nav ul li a:hover {
 }
 
 .video-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    border: none;
 }
 
 /* Estilo da seção SPVAT */

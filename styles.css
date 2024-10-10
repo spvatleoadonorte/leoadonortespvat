@@ -134,3 +134,10 @@ footer {
     color: #fff;
     margin-top: 40px;
 }
+
+/* Ajuste do banner no topo da página */
+.banner-topo img {
+    width: 100%; /* Ajusta a largura para ocupar o tamanho completo da página */
+    max-height: 400px; /* Limita a altura máxima do banner */
+    object-fit: cover; /* Ajusta a imagem para preencher o espaço sem distorção */
+}

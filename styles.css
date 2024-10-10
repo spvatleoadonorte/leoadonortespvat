@@ -135,21 +135,25 @@ footer {
     margin-top: 40px;
 }
 
-/* Ajuste assertivo do banner no topo da página */
+/* Ajuste do container do banner */
 .banner-topo {
-    padding: 0; /* Remove qualquer padding da div que envolve a imagem */
-    margin: 0; /* Remove margens */
+    width: 100%; /* Garante que o container ocupa a largura total */
+    height: auto; /* Deixa a altura ser definida pela imagem */
+    overflow: hidden; /* Garante que o conteúdo que exceder será escondido */
+    margin: 0;
+    padding: 0;
 }
 
+/* Ajuste do banner */
 .banner-topo img {
-    width: 100% !important; /* Garante que a imagem ocupe toda a largura da tela */
+    width: 100% !important; /* Força a largura máxima */
     height: auto !important; /* Mantém a altura proporcional */
     max-height: 450px !important; /* Define uma altura máxima */
-    object-fit: cover !important; /* Garante que a imagem cubra o espaço sem distorções */
-    margin: 0; /* Remove margens */
-    padding: 0; /* Remove qualquer padding */
-    display: block; /* Remove o comportamento inline da imagem */
+    object-fit: cover !important; /* Ajusta a imagem para preencher sem distorção */
+    display: block; /* Remove o comportamento inline */
+    margin: 0 auto; /* Remove margens extras */
 }
+
 
 
 

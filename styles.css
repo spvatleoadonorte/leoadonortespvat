@@ -137,7 +137,9 @@ footer {
 
 /* Ajuste do banner no topo da página */
 .banner-topo img {
-    width: 102%; /* Ajusta a largura para ocupar o tamanho completo da página */
-    max-height: 420px; /* Limita a altura máxima do banner */
+    width: 105%; /* Aumenta ligeiramente a largura */
+    max-height: 450px; /* Aumenta levemente a altura máxima */
     object-fit: cover; /* Ajusta a imagem para preencher o espaço sem distorção */
+    margin-left: -2.5%; /* Centraliza a imagem após o aumento */
 }
+

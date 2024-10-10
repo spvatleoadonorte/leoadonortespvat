@@ -135,14 +135,14 @@ footer {
     margin-top: 40px;
 }
 
-/* Ajuste otimizado do banner no topo da página */
+/* Ajuste assertivo do banner no topo da página */
 .banner-topo img {
-    width: 100%; /* Garante que a largura ocupe toda a tela */
-    height: auto; /* Mantém a proporção correta da imagem */
-    max-height: 450px; /* Ajuste sutil na altura máxima */
-    object-fit: cover; /* Garante o ajuste da imagem sem distorção */
-    display: block; /* Remove possíveis margens ou espaços inesperados */
+    width: 100% !important; /* Garante que a largura ocupe toda a tela */
+    max-height: 450px !important; /* Ajusta a altura para não ultrapassar 450px */
+    object-fit: cover !important; /* Mantém a proporção correta da imagem sem distorcer */
+    display: block; /* Remove qualquer margem ou espaço extra ao redor */
     margin: 0 auto; /* Centraliza a imagem */
 }
+
 
 

@@ -136,13 +136,21 @@ footer {
 }
 
 /* Ajuste assertivo do banner no topo da página */
-.banner-topo img {
-    width: 100% !important; /* Garante que a largura ocupe toda a tela */
-    max-height: 450px !important; /* Ajusta a altura para não ultrapassar 450px */
-    object-fit: cover !important; /* Mantém a proporção correta da imagem sem distorcer */
-    display: block; /* Remove qualquer margem ou espaço extra ao redor */
-    margin: 0 auto; /* Centraliza a imagem */
+.banner-topo {
+    padding: 0; /* Remove qualquer padding da div que envolve a imagem */
+    margin: 0; /* Remove margens */
 }
+
+.banner-topo img {
+    width: 100% !important; /* Garante que a imagem ocupe toda a largura da tela */
+    height: auto !important; /* Mantém a altura proporcional */
+    max-height: 450px !important; /* Define uma altura máxima */
+    object-fit: cover !important; /* Garante que a imagem cubra o espaço sem distorções */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove qualquer padding */
+    display: block; /* Remove o comportamento inline da imagem */
+}
+
 
 
 

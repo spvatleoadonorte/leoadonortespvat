@@ -137,7 +137,7 @@ footer {
 
 /* Ajuste do container do banner */
 .banner-topo {
-    width: 100%; /* Garante que o container ocupa a largura total */
+    width: 102%; /* Aumenta um pouquinho a largura */
     height: auto; /* Deixa a altura ser definida pela imagem */
     overflow: hidden; /* Garante que o conteúdo que exceder será escondido */
     margin: 0;
@@ -146,13 +146,14 @@ footer {
 
 /* Ajuste do banner */
 .banner-topo img {
-    width: 100% !important; /* Força a largura máxima */
+    width: 102% !important; /* Aumenta ligeiramente a largura */
     height: auto !important; /* Mantém a altura proporcional */
-    max-height: 450px !important; /* Define uma altura máxima */
+    max-height: 470px !important; /* Aumenta levemente a altura máxima */
     object-fit: cover !important; /* Ajusta a imagem para preencher sem distorção */
-    display: block; /* Remove o comportamento inline */
-    margin: 0 auto; /* Remove margens extras */
+    display: block;
+    margin: 0 auto;
 }
+
 
 
 

@@ -61,6 +61,52 @@ margin-top: 20px;
     margin: 0;
 }
 
+/* Estilo do Carrossel */
+.carrossel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    max-height: 600px; /* Ajuste conforme o tamanho dos banners */
+    margin-bottom: 20px;
+}
+
+.carrossel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%; /* Para caber 3 banners em sequência */
+}
+
+.carrossel-slides img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+/* Indicadores do Carrossel (opcional) */
+.carrossel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.carrossel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carrossel-indicators button.active {
+    background-color: #333;
+}
+
+
 /* Estilo da faixa preta no rodapé */
 .footer-bar {
     width: 100vw; /* Usa 100% da largura da tela */

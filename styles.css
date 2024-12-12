@@ -79,7 +79,8 @@ margin-top: 20px;
 .carrossel-slides img {
     width: 100%;
     height: auto;
-    flex-shrink: 0;
+   fl
+flex-shrink: 0; /* Garante que as imagens não encolham */
 }
 
 /* Indicadores do Carrossel (opcional) */

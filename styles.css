@@ -13,22 +13,21 @@ body {
 /* Estilo do Carrossel */
 .carrossel {
     width: 100%;
-    overflow: hidden;
+    overflow: hidden; /* Esconde as imagens que saem da área visível */
     position: relative;
-    max-height: 600px; /* Ajuste conforme o tamanho dos banners */
     margin-bottom: 20px;
 }
 
 .carrossel-slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 300%; /* Para caber 3 banners em sequência */
+    width: 300%; /* 3 banners no total, cada um com 100% da largura */
 }
 
 .carrossel-slides img {
-    width: 100%;
+    width: 100%; /* Cada imagem ocupa 100% do container */
     height: auto;
-    flex-shrink: 0; /* Garante que as imagens não encolham */
+    flex-shrink: 0; /* Impede que as imagens encolham */
 }
 
 /* Indicadores do Carrossel (opcional) */

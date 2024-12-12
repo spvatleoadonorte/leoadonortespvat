@@ -37,6 +37,3 @@ function showNextSlide() {
 
 // Troca de slide a cada 5 segundos
 setInterval(showNextSlide, 5000);
-
-// Se quiser adicionar a navegação manual (botões), aqui está um exemplo básico:
-document.getElementById('nextBtn').addEventListener('click', showNextSlide);
